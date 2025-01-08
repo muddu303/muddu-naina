@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Page for Naina ❤️</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0e0b16;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      margin-bottom: 10px;
+      color: #ff79c6;
+      animation: glow 1.5s infinite;
+    }
+
+    header p {
+      font-size: 1.3em;
+      margin-top: -10px;
+      color: #f8f8f8;
+    }
+
+    @keyframes glow {
+      0%, 100% { text-shadow: 0 0 10px #ff79c6, 0 0 20px #ff79c6; }
+      50% { text-shadow: 0 0 20px #ff79c6, 0 0 30px #ff79c6; }
+    }
+
+    /* Starry Background */
+    .stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: radial-gradient(circle, #0e0b16, #1b1b2f);
+      overflow: hidden;
+    }
+
+    .stars span {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 5s infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.5; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.5); }
+    }
+
+    /* Fireworks */
+    .fireworks {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* 3D Photo Carousel */
+    .carousel {
+      perspective: 1000px;
+      margin: 50px auto;
+      width: 80%;
+      height: 300px;
+    }
+
+    .carousel-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: spin 10s linear infinite;
+    }
+
+    .carousel img {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes spin {
+      0% { transform: rotateY(0); }
+      100% { transform: rotateY(360deg); }
+    }
+
+    .carousel img:nth-child(1) { transform: rotateY(0deg) translateZ(300px); }
+    .carousel img:nth-child(2) { transform: rotateY(45deg) translateZ(300px); }
+    .carousel img:nth-child(3) { transform: rotateY(90deg) translateZ(300px); }
+    .carousel img:nth-child(4) { transform: rotateY(135deg) translateZ(300px); }
+    .carousel img:nth-child(5) { transform: rotateY(180deg) translateZ(300px); }
+    .carousel img:nth-child(6) { transform: rotateY(225deg) translateZ(300px); }
+
+    /* Hidden Love Note */
+    .hidden-note {
+      margin: 40px auto;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .hidden-note.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ff79c6;
+      color: #fff;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: transform 0.3s;
+    }
+
+    .reveal-button:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <canvas class="fireworks"></canvas>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Naina, You're Amazing! ❤️</h1>
+    <p>A page as special as you are.</p>
+  </header>
+
+  <!-- 3D Photo Carousel -->
+  <section class="carousel">
+    <div class="carousel-container">
+      <img src="https://mail.google.com/mail/u/0?ui=2&ik=397defad53&attid=0.1&permmsgid=msg-f:1820658327104493021&th=1944471a2c6b95dd&view=att&disp=safe&realattid=194447158f794b630fc2&zw" alt="Memory 1">
+      <img src="https://mail.google.com/mail/u/0?ui=2&ik=397defad53&attid=0.2&permmsgid=msg-f:1820658327104493021&th=1944471a2c6b95dd&view=att&disp=safe&realattid=194447158f7d2d4490d4&zwhttps://mail.google.com/mail/u/0?ui=2&ik=397defad53&attid=0.2&permmsgid=msg-f:1820658327104493021&th=1944471a2c6b95dd&view=att&disp=safe&realattid=194447158f7d2d4490d4&zw" alt="Memory 2">
+      <img src="https://mail.google.com/mail/u/0?ui=2&ik=397defad53&attid=0.3&permmsgid=msg-f:1820658327104493021&th=1944471a2c6b95dd&view=att&disp=safe&realattid=194447158f7f8af1aee1&zw" alt="Memory 3">
+      <img src="https://mail.google.com/mail/u/0?ui=2&ik=397defad53&attid=0.4&permmsgid=msg-f:1820658327104493021&th=1944471a2c6b95dd&view=att&disp=safe&realattid=194447158f7875989483&zw" alt="Memory 4">
+     
+    </div>
+  </section>
+
+  <!-- Hidden Love Note -->
+  <section class="hidden-note" id="hidden-note">
+    <h2>My Dear Naina,</h2>
+    <p>
+      You light up my world like no one else. This page is just a small gesture 
+      to show how much you mean to me. You’re my star, my inspiration, and my everything. 💖
+    </p>
+  </section>
+
+  <!-- Reveal Button -->
+  <div style="text-align: center;">
+    <button class="reveal-button" onclick="revealNote()">Reveal a Secret Message!</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Made with 💕 for the most amazing person in the world — Naina.
+  </footer>
+
+  <script>
+    // Fireworks Script
+    const canvas = document.querySelector('.fireworks');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    function createFirework(x, y) {
+      for (let i = 0; i < 100; i++) {
+        const angle = Math.random() * Math.PI * 2;
+        const speed = Math.random() * 3 + 2;
+        const vx = Math.cos(angle) * speed;
+        const vy = Math.sin(angle) * speed;
+        const color = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        setTimeout(() => drawParticle(x, y, vx, vy, color), i * 10);
+      }
+    }
+
+    function drawParticle(x, y, vx, vy, color) {
+      ctx.beginPath();
+      ctx.arc(x, y, 3, 0, Math.PI * 2);
+      ctx.fillStyle = color;
+      ctx.fill();
+      x += vx;
+      y += vy;
+    }
+
+    setInterval(() => {
+      const x = Math.random() * canvas.width;
+      const y = Math.random() * canvas.height / 2;
+      createFirework(x, y);
+    }, 1000);
+
+    // Stars Script
+    const stars = document.querySelector('.stars');
+    for (let i = 0; i < 100; i++) {
+      const star = document.createElement('span');
+      star.style.width = `${Math.random() * 3}px`;
+      star.style.height = `${Math.random() * 3}px`;
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+      stars.appendChild(star);
+    }
+
+    // Reveal Love Note
+    function revealNote() {
+      document.getElementById('hidden-note').classList.add('visible');
+    }
+  </script>
+</body>
+</html>
